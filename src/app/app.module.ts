@@ -3,18 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './layout/components/navbar/navbar.component';
-import { SlideComponent } from './home/components/slide/slide.component';
+import { HomeModule } from './home/home.module';
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    SlideComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LayoutModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
